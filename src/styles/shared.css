@@ -40,6 +40,7 @@ body {
     border: none;
     width: 3.2rem;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .bar {
@@ -48,6 +49,37 @@ body {
     margin: 0.4rem 0;
     background-color: black;
     display: block;
+}
+
+.mobile-nav__items {
+    display: none;
+    width: 5rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #ececec;
+}
+
+.unfold {
+    display: block;
+}
+
+.mobile-nav__item {
+    margin: 0.2rem;
+    
+}
+
+.mobile-nav__item:hover,
+.mobile-nav__item:active {
+    font-weight: bold;
+}
+
+.mobile-nav__item a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Styling desktop nav*/

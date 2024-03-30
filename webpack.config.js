@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   entry: {
+    navbar: './src/navbar.ts',
     content: './src/content.ts',
     contact: './src/contact.ts'
   },
