@@ -1,3 +1,4 @@
+/* GENERAL SETUP */
 * {
     box-sizing: border-box;
 }
@@ -7,6 +8,7 @@ body {
     padding: 0;
 }
 
+/* HEADER GENERAL STYLING */
 .main-header {
     display: inline-block;
     position: fixed;
@@ -17,7 +19,6 @@ body {
     background-color: white;
 }
 
-/* Styling brand image */
 .main-header__brand {
     display: inline-block;
     width: 3.5rem;
@@ -29,7 +30,7 @@ body {
     width: 100%;
 }
 
-/* Styling mobile nav */
+/* MOBILE NAV STYLE */
 .mobile-nav {
     display: inline-block;
     text-align: right;
@@ -54,18 +55,17 @@ body {
 
 .mobile-nav__items {
     display: none;
-    width: 5rem;
     position: absolute;
+    z-index: 1;
     top: 3.2rem;
     right: 0;
-    list-style: none;
+    width: 5rem;
+    margin: 0;
     padding: 0;
+    list-style: none;
     text-align: center;
-    z-index: 1;
     background-color: rgb(250, 246, 246);
     border-radius: 5%;
-    border-top: none;
-    margin: 0;
 }
 
 .unfold {
@@ -92,7 +92,7 @@ body {
     color: black;
 }
 
-/* Styling desktop nav*/
+/* DESKTOP NAV STYLE*/
 .main-nav {
     display: none;
     text-align: right;
@@ -114,6 +114,7 @@ body {
     color: black;
 }
 
+/* IMAGE FOLLOWING NAVBAR */
 .image-section {
     background: url('../../public/assets/A_Picture_Postcard_from_Curiositys.png');
     background-size: cover;
