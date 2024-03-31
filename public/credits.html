@@ -3,8 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../dist/navbar.js" defer></script>
+    <link rel="stylesheet" href="../src/styles/shared.css" />
     <link rel="stylesheet" href="../src/styles/credits.css" />
     <title>Credits</title>
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <a href="index.html" class="main-header__brand"
+        ><img src="./assets/mars-rover.png" alt="mars-rover"
+      /></a>
+      <nav class="mobile-nav">
+        <button class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item"><a href="./content.html">Images</a></li>
+          <li class="mobile-nav__item"><a href="./contact.html">Contact</a></li>
+          <li class="mobile-nav__item"><a href="./credits.html">Credits</a></li>
+        </ul>
+      </nav>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="./content.html">Images</a></li>
+          <li class="main-nav__item"><a href="./contact.html">Contact</a></li>
+          <li class="mobile-nav__item"><a href="./credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

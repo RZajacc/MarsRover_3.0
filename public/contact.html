@@ -4,54 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="../dist/navbar.js" defer></script>
     <link rel="stylesheet" href="../src/styles/shared.css" />
     <link rel="stylesheet" href="../src/styles/contact.css" />
     <script src="../dist/contact.js" defer></script>
     <title>Contact</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md bg-warning">
-        <div class="container-fluid">
-          <div class="col-1 col-md-2"></div>
-          <div class="col-5">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="assets/rover.jpg"
-                alt="rover-drawing"
-                id="rover-nav-pic"
-              />
-            </a>
-          </div>
-          <div class="col-4 col-md-3">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >About</a
-                >
-                <a class="nav-link" href="content.html">Pictures</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-              </div>
-            </div>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="col-2"></div>
-        </div>
+    <header class="main-header">
+      <a href="index.html" class="main-header__brand"
+        ><img src="./assets/mars-rover.png" alt="mars-rover"
+      /></a>
+      <nav class="mobile-nav">
+        <button class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item"><a href="./content.html">Images</a></li>
+          <li class="mobile-nav__item"><a href="./contact.html">Contact</a></li>
+          <li class="mobile-nav__item"><a href="./credits.html">Credits</a></li>
+        </ul>
+      </nav>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="./content.html">Images</a></li>
+          <li class="main-nav__item"><a href="./contact.html">Contact</a></li>
+          <li class="mobile-nav__item"><a href="./credits.html">Credits</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -126,11 +110,5 @@
         </div>
       </div>
     </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
