@@ -114,6 +114,18 @@ body {
     color: black;
 }
 
+.image-section {
+    background: url('../../public/assets/A_Picture_Postcard_from_Curiositys.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 0% 0%; */
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 11rem;
+}
+
+
+
 @media (min-width : 400px) {
     .mobile-nav {
         display: none;
