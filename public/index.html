@@ -37,7 +37,7 @@
     <main>
       <section class="image-section"></section>
 
-      <!-- *------------GENERAL DESCRIPTION--------------------------------- -->
+      <!-- GENERAL DESCRIPTION -->
       <section id="general-description">
         The main scope of this page is to display images made by mars rovers.
         They are being sent to the red planet as a part of NASA's Mars
@@ -52,16 +52,20 @@
         about them in a section below.
       </section>
 
-      <!-- *------------ACCORDION WITH DETAILS--------------------------------- -->
-      <section id="spirit-presentation">
+      <!-- SPIRIT ROVER SECTION -->
+      <section class="rover-presentation">
         <div class="rover-header">
           <h3>Spirit (2003-2011)</h3>
         </div>
-        <img
-          src="../public/assets/spirit_rover.webp"
-          alt="spirit-image"
-          id="spirit-image"
-        />
+        <a
+          href="https://mars.nasa.gov/resources/3910/a-moment-frozen-in-time/"
+          id="spirit-image-link"
+        >
+          <img
+            src="../public/assets/spirit_moment_frozen_in_time.jpg"
+            alt="spirit-image"
+          />
+        </a>
         <div>
           Covered a total distance of 7.73 km. One of two rovers launched in
           2003 to explore Mars and search for signs of past life, Spirit far
@@ -76,52 +80,41 @@
         </div>
       </section>
 
+      <!-- OPPORTUNITY ROVER SECTION -->
+      <section class="rover-presentation">
+        <div class="rover-header">
+          <h3>Opportunity (2003-2019)</h3>
+        </div>
+        <a
+          href="https://mars.nasa.gov/resources/3848/late-afternoon-shadows-at-endeavour-crater/"
+          id="opportunity-image-link"
+        >
+          <img
+            src="../public/assets/opportunity_late_afternoon_shadows.jpg"
+            alt="spirit-image"
+          />
+        </a>
+
+        <div>
+          Covered a total distance of 45.16 km. Opportunity was the second of
+          the two rovers launched in 2003 to land on Mars and begin traversing
+          the Red Planet in search of signs of ancient water. The rover explored
+          the Martian terrain for almost 15 years, far outlasting her planned
+          90-day mission. After landing on Mars in 2004, Opportunity made a
+          number of discoveries about the Red Planet including dramatic evidence
+          that long ago at least one area of Mars stayed wet for an extended
+          period and that conditions could have been suitable for sustaining
+          microbial life. The Opportunity rover stopped communicating with Earth
+          when a severe Mars-wide dust storm blanketed its location in June
+          2018. After more than a thousand commands to restore contact,
+          engineers in the Mission Control at NASA's Jet Propulsion Laboratory
+          (JPL) made their last attempt to revive Opportunity Tuesday, February
+          13, 2019, to no avail. The solar-powered rover's final communication
+          was received June 10.
+        </div>
+      </section>
+
       <!-- <section>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    <p>
-                      <strong>Opportunity (2003-2019) - </strong>
-                      Covered a total distance of 45.16 km
-                    </p>
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      Opportunity was the second of the two rovers launched in
-                      2003 to land on Mars and begin traversing the Red Planet
-                      in search of signs of ancient water. The rover explored
-                      the Martian terrain for almost 15 years, far outlasting
-                      her planned 90-day mission. After landing on Mars in 2004,
-                      Opportunity made a number of discoveries about the Red
-                      Planet including dramatic evidence that long ago at least
-                      one area of Mars stayed wet for an extended period and
-                      that conditions could have been suitable for sustaining
-                      microbial life. The Opportunity rover stopped
-                      communicating with Earth when a severe Mars-wide dust
-                      storm blanketed its location in June 2018. After more than
-                      a thousand commands to restore contact, engineers in the
-                      Mission Control at NASA's Jet Propulsion Laboratory (JPL)
-                      made their last attempt to revive Opportunity Tuesday,
-                      February 13, 2019, to no avail. The solar-powered rover's
-                      final communication was received June 10.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
