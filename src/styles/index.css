@@ -8,7 +8,48 @@
     height: 10rem;
 }
 
-.spirit-desc {
-    /* margin-top: 5rem; */
+#general-description {
+    padding: 0.8rem;
+    text-align: justify;
 }
 
+.nasa-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nasa-link:hover,
+.nasa-link:active{
+    background-color: rgb(239, 224, 181);
+    border-radius: 2%;
+}
+
+/* ROVER SECTIONS */
+#spirit-presentation {
+    padding: 0.8rem;
+    padding-top: 0;
+    text-align: justify;
+}
+
+.rover-header {
+    text-align: center;
+    background-color: aqua ;
+    padding: 0.4rem;
+    margin-bottom: 0.2rem;
+    background-color: rgb(239, 224, 181);
+    border-radius: 2%;
+}
+
+.rover-header h3 {
+    margin: 0;
+}
+
+#spirit-image {
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    border-radius: 2%;
+    margin: 0 0.8rem 0 0;
+}
