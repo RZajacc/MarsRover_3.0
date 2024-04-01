@@ -35,6 +35,7 @@ main {
 #contact-form textarea {
     padding: 0.3rem;
     border: 1px solid #ccc;
+    font-family: inherit;
 }
 
 #contact-form input:focus-visible, 
