@@ -8,9 +8,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="../dist/navbar.js" defer></script>
+    <script src="../dist/contact.js" defer></script>
     <link rel="stylesheet" href="../src/styles/shared.css" />
     <link rel="stylesheet" href="../src/styles/contact.css" />
-    <script src="../dist/contact.js" defer></script>
     <title>Contact</title>
   </head>
   <body>
@@ -43,65 +43,18 @@
 
     <main>
       <!-- *-----------------CONTACT FORM---------------------------- -->
+      <h4 id="contact-form-title">
+        If you want to contact me please fill the form below:
+      </h4>
+
       <form id="contact-form">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-10 col-xs-9 col-sm-8 col-md-6 col-lg-4">
-              <div class="mb-3">
-                <h4 id="form-description">
-                  If you want to contact me please fill the form below:
-                </h4>
-                <label for="name" class="form-label"
-                  >Please provide your name:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="from_name"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="emailAdress" class="form-label"
-                  >Your email address:</label
-                >
-                <input
-                  type="email"
-                  name="user_mail"
-                  class="form-control"
-                  id="emailAdress"
-                  aria-describedby="emailField"
-                  required
-                />
-                <div id="emailField" class="form-text">
-                  We'll need it in order to respond to your request.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="message" class="form-label">Your message:</label>
-                <textarea
-                  class="form-control"
-                  aria-label="message"
-                  rows="5"
-                  id="message"
-                  name="message"
-                  required
-                ></textarea>
-              </div>
-              <div>
-                <p id="email-error"></p>
-              </div>
-              <div class="mb-3 text-center">
-                <button class="btn btn-success" type="submit">
-                  Submit your message
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <label for="name">Please provide your name:</label>
+        <input type="text" id="name" name="from_name" required />
+        <label for="emailAdress">Your email address:</label>
+        <input type="email" name="user_mail" id="email-adress" required />
+        <label for="message">Your message:</label>
+        <textarea rows="5" id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
       </form>
     </main>
 
