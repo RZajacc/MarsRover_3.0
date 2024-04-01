@@ -121,7 +121,7 @@ main {
 
 /* IMAGE FOLLOWING NAVBAR */
 .image-section {
-    background: url('../../public/assets/A_Picture_Postcard_from_Curiositys.png');
+    background: url('https://res.cloudinary.com/dqdofxwft/image/upload/v1711966944/MarsRoverProject/pfwufgum0zeeltjmwd4o.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: 0% 0%; */
