@@ -1,3 +1,4 @@
+/* GENERAL SETUP */
 @font-face {
     font-family: "Roboto";
     src: url("../styles/fonts/Roboto-Regular.ttf");
@@ -9,7 +10,6 @@
     font-weight: 700;
 }
 
-/* GENERAL SETUP */
 * {
     box-sizing: border-box;
 }
@@ -27,7 +27,9 @@ main {
 
 /* HEADER GENERAL STYLING */
 .main-header {
-    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,10 +39,8 @@ main {
 }
 
 .main-header__brand {
-    display: inline-block;
     width: 3.5rem;
     height: 3.5rem;
-    vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -48,13 +48,6 @@ main {
 }
 
 /* MOBILE NAV STYLE */
-.mobile-nav {
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
-    width: calc(100% - 4rem);
-}
-
 .toggle-button {
     border: none;
     width: 3.2rem;
@@ -76,7 +69,7 @@ main {
     z-index: 1;
     top: 3.2rem;
     right: 0;
-    width: 5rem;
+    width: 6rem;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -86,7 +79,8 @@ main {
 }
 
 .unfold {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-nav__item {
@@ -112,23 +106,31 @@ main {
 /* DESKTOP NAV STYLE*/
 .main-nav {
     display: none;
-    text-align: right;
-    width: calc(100% - 4rem);
 }
 
 .main-nav__items {
+    display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .main-nav__item {
-    display: inline-block;
-    margin: 0.2rem;
+    margin: 0 0.2rem;
 }
 
 .main-nav__item a {
     text-decoration: none;
     color: black;
+    padding: 0.3rem;
+    border-radius: 8px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item:active {
+    font-weight: bold;
+    background-color: rgb(239, 224, 181, 0.5);
 }
 
 /* IMAGE FOLLOWING NAVBAR */
@@ -214,6 +216,6 @@ main {
         display: none;
     }
     .main-nav {
-        display: inline-block;
+        display: flex;
     }
 }
