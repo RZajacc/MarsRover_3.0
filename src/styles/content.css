@@ -73,3 +73,53 @@
     font-family: inherit;
     padding: 0.2rem;
 }
+
+/* IMAGE GALLERY */
+#photo-gallery {
+    margin-top: 1rem;
+    padding: 0 0.8rem
+}
+.photo-gallery__item {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.2rem;
+    position: relative;
+}
+
+.photo-gallery__item__anchor-tag img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.span__rover {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.span__earth-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.span__camera {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.span__image-id {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 0.8rem;
+}
+
