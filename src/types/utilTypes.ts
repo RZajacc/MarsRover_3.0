@@ -1,4 +1,4 @@
-import type { responseRover } from './dataTypes'
+import type { missionManifest, responseRover } from './dataTypes'
 
 export interface utilFuncs {
   displayEmptyRoverErr: (
@@ -7,6 +7,10 @@ export interface utilFuncs {
   ) => void
   cleanAllDynamicContent: () => void
   removeAllChildNodes: (parent: HTMLElement) => void
+  displayRoverInfo: (
+    info: missionManifest,
+    removeAllChildNodes: (parent: HTMLElement) => void
+  ) => string[]
   cleanAllAfterSolDayInput: () => void
   camSelectors: (
     camerasUsed: string[],

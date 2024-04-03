@@ -27,6 +27,7 @@ const utils: utilFuncs = {
   displayEmptyRoverErr,
   cleanAllDynamicContent,
   removeAllChildNodes,
+  displayRoverInfo,
   cleanAllAfterSolDayInput,
   camSelectors,
   fetchImages,
@@ -82,7 +83,7 @@ export const displayRoverInfoSection = async (
   utils.cleanAllDynamicContent()
 
   // Build DOM elements with a function and retrieve ID's of elements required to continue
-  const [solDayInputID, failureDivID] = displayRoverInfo(
+  const [solDayInputID, failureDivID] = utils.displayRoverInfo(
     info,
     utils.removeAllChildNodes
   )
