@@ -32,7 +32,6 @@ export function cleanAllDynamicContent(): void {
     '#content-inputs__cam-select__header'
   )!
   removeAllChildNodes(camInfo)
-  // camInfo.innerHTML = ''
   const camerasList: HTMLDivElement = document.querySelector(
     '#content-inputs__cam-select__div'
   )!
@@ -43,7 +42,7 @@ export function cleanAllDynamicContent(): void {
   removeAllChildNodes(photoDiv)
 
   // *Get pagination div and delete the content
-  const pagesDiv: HTMLDivElement = document.querySelector('#pages')!
+  const pagesDiv: HTMLDivElement = document.querySelector('#pagination')!
   removeAllChildNodes(pagesDiv)
 }
 
@@ -52,14 +51,17 @@ export function cleanAllDynamicContent(): void {
  * day information was displayed on the page
  */
 export function cleanAllAfterSolDayInput(): void {
-  const camerasList: HTMLDivElement =
-    document.querySelector('#camera-selectors')!
+  const camInfo: HTMLParagraphElement = document.querySelector(
+    '#content-inputs__cam-select__header'
+  )!
+  removeAllChildNodes(camInfo)
+  const camerasList: HTMLDivElement = document.querySelector(
+    '#content-inputs__cam-select__div'
+  )!
   removeAllChildNodes(camerasList)
-  const camInfo: HTMLParagraphElement = document.querySelector('#cameras-info')!
-  camInfo.innerHTML = ''
-  // * Get the gallery div and clean it from existing content
+  // Get the gallery div and clean it from existing content
   const photoDiv: HTMLDivElement = document.querySelector('#photo-gallery')!
   removeAllChildNodes(photoDiv)
-  const pagesDiv: HTMLDivElement = document.querySelector('#pages')!
+  const pagesDiv: HTMLDivElement = document.querySelector('#pagination')!
   removeAllChildNodes(pagesDiv)
 }

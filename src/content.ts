@@ -211,7 +211,7 @@ export const imageDisplaySection = async (
 ): Promise<void> => {
   // Displaying photos is called from few places
   utils.displayGallery(data, utils.removeAllChildNodes)
-
+  console.log('PAGE in function', page)
   // Determine which form of pagination to display
   if (camName === 'ALL') {
     utils.paginationFixedPages(

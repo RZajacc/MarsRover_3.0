@@ -16,7 +16,7 @@ export function displayGallery(
     'photo-gallery'
   ) as HTMLDivElement
   removeAllChildNodes(photoGallery)
-  const pagesDiv = document.getElementById('pages') as HTMLDivElement
+  const pagesDiv = document.getElementById('pagination') as HTMLDivElement
   removeAllChildNodes(pagesDiv)
 
   // Loop through requested data
