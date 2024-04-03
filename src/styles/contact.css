@@ -1,16 +1,13 @@
-main {
+/* main {
     padding-top: 1rem;
-}
+} */
 
 /* Title over the form */
 #contact-form-title {
     text-align: center;
     color: #642cdc;
     font-size: 1.2rem;
-    padding: 0.5rem;
-}
-
-#contact-form-title {
+    padding: 1rem;
     margin: 0;
 }
 

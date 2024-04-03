@@ -21,8 +21,8 @@ body {
 }
 
 main {
-    margin-top: 4rem;
-    min-height: calc(100vh - 8rem);
+    margin-top: 69px;
+    min-height: calc(100vh - 69px - 57px);
 }
 
 /* HEADER GENERAL STYLING */
