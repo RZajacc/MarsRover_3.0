@@ -16,7 +16,7 @@ export function displayEmptyRoverErr(
   // * Create a field to display provided message and append it
   const roverInfo: HTMLDivElement | null = document.querySelector('#rover-info')
   const roverParagraph = document.createElement('p')
-  roverParagraph.innerHTML = message
-  roverParagraph.setAttribute('style', 'text-align:center; color:red')
+  roverParagraph.innerText = message
+  roverParagraph.classList.add('no-rover-selected-err')
   roverInfo?.appendChild(roverParagraph)
 }

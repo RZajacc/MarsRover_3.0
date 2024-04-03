@@ -1,0 +1,18 @@
+#rover-inputs {
+    padding: 0 1rem;
+}
+
+#rover-inputs__name__header {
+    text-align: center;
+}
+
+#rover-inputs__name__select {
+    width: 100%;
+    font-family: inherit;
+    padding: 0.2rem;
+}
+
+.no-rover-selected-err {
+    text-align: center;
+    color: rgb(238, 106, 106);
+}

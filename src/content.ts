@@ -40,7 +40,7 @@ export const chooseRover = (utils: utilFuncs): void => {
   // Query select field from document
   const roverSelect: HTMLSelectElement =
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    document.querySelector('#rover-select')!
+    document.querySelector('#rover-inputs__name__select')!
   // Add an event listenet to it and get selected value
   roverSelect.addEventListener('change', (e) => {
     const target = e.target as HTMLSelectElement
