@@ -28,11 +28,14 @@ export function cleanAllDynamicContent(): void {
     '#content-inputs__solar-day-desc'
   )!
   removeAllChildNodes(solDayDescDiv)
+  const camInfo: HTMLParagraphElement = document.querySelector(
+    '#content-inputs__cam-select__header'
+  )!
+  removeAllChildNodes(camInfo)
+  // camInfo.innerHTML = ''
   const camerasList: HTMLDivElement =
     document.querySelector('#camera-selectors')!
   removeAllChildNodes(camerasList)
-  const camInfo: HTMLParagraphElement = document.querySelector('#cameras-info')!
-  camInfo.innerHTML = ''
 
   // * Get the gallery div and clean it from existing content
   const photoDiv: HTMLDivElement = document.querySelector('#photo-gallery')!

@@ -11,10 +11,23 @@ export function camSelectors(
   camerasUsed: string[],
   removeAllChildNodes: (parent: HTMLElement) => void
 ): string {
-  const camInfo: HTMLParagraphElement = document.querySelector('#cameras-info')!
-  camInfo.innerHTML =
-    'Each rover has a diffent set of cameras. Select the ones that are interesting for you:'
+  // Query parent element
+  const camInfo: HTMLParagraphElement = document.querySelector(
+    '#content-inputs__cam-select__header'
+  )!
+  // Clean from previous content
+  removeAllChildNodes(camInfo)
+  // Create new content
+  const camInfoHeader = document.createElement('h3')
+  camInfoHeader.innerText = "Choose rover's camera:"
+  const camInfoParagraph = document.createElement('p')
+  camInfoParagraph.innerText =
+    '*Optional - If none selected all images will be displayed'
+  // Append it to parent div
+  camInfo.appendChild(camInfoHeader)
+  camInfo.appendChild(camInfoParagraph)
 
+  // Query parent element (cam select)
   const camerasList: HTMLDivElement =
     document.querySelector('#camera-selectors')!
   removeAllChildNodes(camerasList)

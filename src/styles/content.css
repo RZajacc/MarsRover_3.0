@@ -54,3 +54,16 @@
 .hide-err {
     display:none
 }
+
+#content-inputs__cam-select__header h3{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#content-inputs__cam-select__header p {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
