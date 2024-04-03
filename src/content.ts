@@ -41,7 +41,7 @@ export const chooseRover = (utils: utilFuncs): void => {
   // Query select field from document
   const roverSelect: HTMLSelectElement =
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    document.querySelector('#rover-inputs__name__select')!
+    document.querySelector('#content-inputs__rover__select')!
   // Add an event listenet to it and get selected value
   roverSelect.addEventListener('change', (e) => {
     const target = e.target as HTMLSelectElement
@@ -100,8 +100,7 @@ export const displayRoverInfoSection = async (
     const target = e.target as HTMLInputElement
     const solDay = target.value
     if (parseInt(solDay) >= 0 && parseInt(solDay) <= parseInt(info.max_sol)) {
-      solDayInputField.setAttribute('class', 'form-control is-valid')
-      failureDiv.setAttribute('hidden', '')
+      failureDiv.classList.add('hide-err')
       await displaySolDayInfoSection(
         info.photos,
         roverName,
@@ -109,8 +108,7 @@ export const displayRoverInfoSection = async (
         utils
       )
     } else {
-      solDayInputField.setAttribute('class', 'form-control is-invalid')
-      failureDiv.toggleAttribute('hidden')
+      failureDiv.classList.remove('hide-err')
     }
   })
 }

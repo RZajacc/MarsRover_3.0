@@ -48,9 +48,9 @@
     <main>
       <!-- IMAGE -->
       <section class="image-section"></section>
-      <section id="rover-inputs">
-        <h2 id="rover-inputs__name__header">Please select a rover:</h2>
-        <select id="rover-inputs__name__select" data-cy="rover-select">
+      <section id="content-inputs">
+        <h3 id="content-inputs__name__header">Please select a rover:</h3>
+        <select id="content-inputs__rover__select" data-cy="rover-select">
           <option selected value=""></option>
           <option value="curiosity">Curiosity</option>
           <option value="opportunity">Opportunity</option>
@@ -58,23 +58,11 @@
         </select>
 
         <!-- !UNTIL HERE ITS FINE -->
-        <!--? PLACEHOLDER FOR INFORMATION ABOUT ROVER  -->
-        <div class="row justify-content-center">
-          <div
-            class="col-10 col-xs-9 col-sm-8 col-md-6 col-lg-4"
-            id="rover-info"
-          ></div>
-        </div>
+        <!--? GENERAL INFORMATION ABOUT SELECTED ROVER  -->
+        <div id="content-inputs__rover-info"></div>
 
         <!--? PLACEHOLDER FOR SOLAR DAY INPUT FIELD  -->
-        <div class="row justify-content-center">
-          <div class="col-10 col-xs-9 col-sm-8 col-md-6 col-lg-4">
-            <div
-              class="input-group input-group-sm mb-3"
-              id="solar-day-input"
-            ></div>
-          </div>
-        </div>
+        <div id="content-inputs__solar-day-input"></div>
 
         <!--? PLACEHOLDER FOR SOLAR DAY DESC  -->
         <div class="row justify-content-center">

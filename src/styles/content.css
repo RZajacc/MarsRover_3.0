@@ -1,12 +1,12 @@
-#rover-inputs {
+#content-inputs {
     padding: 0 1rem;
 }
 
-#rover-inputs__name__header {
+#content-inputs__name__header {
     text-align: center;
 }
 
-#rover-inputs__name__select {
+#content-inputs__rover__select {
     width: 100%;
     font-family: inherit;
     padding: 0.2rem;
@@ -14,5 +14,43 @@
 
 .no-rover-selected-err {
     text-align: center;
-    color: rgb(238, 106, 106);
+    color: #ee6a6a;
+}
+
+#mission-status {
+    font-weight: bold;
+}
+
+.active {
+    color: #7CFC00
+}
+
+.complete {
+    color: #ee6a6a
+}
+
+#content-inputs__solarday__header {
+    text-align: center;
+}
+
+#content-inputs__solarday__input {
+    width: 100%;
+    font-family: inherit;
+    padding: 0.2rem;
+}
+
+#failureDiv {
+    margin-top: 1rem;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9rem;
+    color:white;
+    border: 1px solid #ee6a6a;
+    background-color: #ec5656;
+    border-radius: 10px;
+    padding: 0.5rem 0.3rem;
+}
+
+.hide-err {
+    display:none
 }

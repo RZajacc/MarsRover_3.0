@@ -16,8 +16,14 @@ export function removeAllChildNodes(parent: HTMLElement): void {
  * and removes it with the help of removeAllChildNodes function.
  */
 export function cleanAllDynamicContent(): void {
-  const roverInfo: HTMLDivElement = document.querySelector('#rover-info')!
+  const roverInfo: HTMLDivElement = document.querySelector(
+    '#content-inputs__rover-info'
+  )!
   removeAllChildNodes(roverInfo)
+  const solDayInput: HTMLDivElement = document.querySelector(
+    '#content-inputs__solar-day-input'
+  )!
+  removeAllChildNodes(solDayInput)
   const solDayDescDiv: HTMLDivElement = document.querySelector('#sol-day-desc')!
   removeAllChildNodes(solDayDescDiv)
   const camerasList: HTMLDivElement =
@@ -25,9 +31,6 @@ export function cleanAllDynamicContent(): void {
   removeAllChildNodes(camerasList)
   const camInfo: HTMLParagraphElement = document.querySelector('#cameras-info')!
   camInfo.innerHTML = ''
-  const solDayInput: HTMLDivElement =
-    document.querySelector('#solar-day-input')!
-  removeAllChildNodes(solDayInput)
 
   // * Get the gallery div and clean it from existing content
   const photoDiv: HTMLDivElement = document.querySelector('#photo-gallery')!

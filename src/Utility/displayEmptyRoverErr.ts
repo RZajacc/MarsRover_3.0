@@ -14,7 +14,9 @@ export function displayEmptyRoverErr(
   cleanAllDynamicContent()
 
   // * Create a field to display provided message and append it
-  const roverInfo: HTMLDivElement | null = document.querySelector('#rover-info')
+  const roverInfo: HTMLDivElement | null = document.querySelector(
+    '#content-inputs__rover-info'
+  )
   const roverParagraph = document.createElement('p')
   roverParagraph.innerText = message
   roverParagraph.classList.add('no-rover-selected-err')
