@@ -24,7 +24,9 @@ export function cleanAllDynamicContent(): void {
     '#content-inputs__solar-day-input'
   )!
   removeAllChildNodes(solDayInput)
-  const solDayDescDiv: HTMLDivElement = document.querySelector('#sol-day-desc')!
+  const solDayDescDiv: HTMLDivElement = document.querySelector(
+    '#content-inputs__solar-day-desc'
+  )!
   removeAllChildNodes(solDayDescDiv)
   const camerasList: HTMLDivElement =
     document.querySelector('#camera-selectors')!

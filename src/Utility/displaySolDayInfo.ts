@@ -21,7 +21,10 @@ export function displaySolDayInfo(
     return entry.sol === selectedSolarDayInt
   })
 
-  const solDayDescDiv: HTMLDivElement = document.querySelector('#sol-day-desc')!
+  const solDayDescDiv: HTMLDivElement = document.querySelector(
+    '#content-inputs__solar-day-desc'
+  )!
+
   removeAllChildNodes(solDayDescDiv)
   const solDayDescParagraph = document.createElement('p')
   solDayDescDiv.appendChild(solDayDescParagraph)
