@@ -12,7 +12,7 @@ export function displayRoverInfo(
   info: missionManifest,
   removeAllChildNodes: (parent: HTMLElement) => void
 ): string[] {
-  // * Create a field to display provided message and append it
+  // Create a field to display provided message and append it
   const roverInfo: HTMLDivElement = document.querySelector(
     '#content-inputs__rover-info'
   )!
@@ -23,24 +23,24 @@ export function displayRoverInfo(
       status is <span id="mission-status">${info.status}</span>.`
   roverInfo.appendChild(roverParagraph)
 
-  // * Check mission status and add value to a field
+  // Check mission status and add value to a field
   const missionStatus: HTMLElement = document.querySelector('#mission-status')!
 
   missionStatus.textContent = info.status.toUpperCase()
 
-  // * Apply color to mission status depending if its active or not
+  // Apply color to mission status depending if its active or not
   if (info.status === 'active') {
     missionStatus.classList.add('active')
   } else {
     missionStatus.classList.add('complete')
   }
 
-  // * Generate an input field for solar day
+  // Generate an input field for solar day
   const solDayInput: HTMLDivElement = document.querySelector(
     '#content-inputs__solar-day-input'
   )!
 
-  // * Clear previously generated data
+  // Clear previously generated data
   removeAllChildNodes(solDayInput)
 
   const solDaylabel = document.createElement('h3')
@@ -56,7 +56,7 @@ export function displayRoverInfo(
   solDayInputField.setAttribute('placeholder', `min - 0, max - ${info.max_sol}`)
   solDayInput.appendChild(solDayInputField)
 
-  // * Invalid feedback div
+  // Invalid feedback div
   const failureDiv = document.createElement('div')
   failureDiv.setAttribute('id', 'failureDiv')
   failureDiv.setAttribute('class', 'hide-err')

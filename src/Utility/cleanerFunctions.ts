@@ -33,8 +33,9 @@ export function cleanAllDynamicContent(): void {
   )!
   removeAllChildNodes(camInfo)
   // camInfo.innerHTML = ''
-  const camerasList: HTMLDivElement =
-    document.querySelector('#camera-selectors')!
+  const camerasList: HTMLDivElement = document.querySelector(
+    '#content-inputs__cam-select__div'
+  )!
   removeAllChildNodes(camerasList)
 
   // * Get the gallery div and clean it from existing content

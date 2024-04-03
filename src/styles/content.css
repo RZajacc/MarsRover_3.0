@@ -67,3 +67,9 @@
     color: gray;
     text-align: center;
 }
+
+#content-inputs__cam-select__input {
+    width: 100%;
+    font-family: inherit;
+    padding: 0.2rem;
+}
