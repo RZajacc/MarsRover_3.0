@@ -1,18 +1,31 @@
 /* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
     padding: 0 1rem;
-    max-width: 1024px;
-    margin: 0 auto;
+    max-width: 550px;
+    margin: 2rem auto 4rem;
+    display: grid;
+    row-gap: 1rem;
+    align-items: center;
 }
 
 #content-inputs__name__header {
     text-align: center;
+    margin: 0;
 }
 
 #content-inputs__rover__select {
     width: 100%;
     font-family: inherit;
     padding: 0.2rem;
+}
+
+#content-inputs__rover-info {
+    padding: 0 0.5rem;
+}
+
+#content-inputs__rover-info p{
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 .no-rover-selected-err {
@@ -35,12 +48,25 @@
 
 #content-inputs__solarday__header {
     text-align: center;
+    margin: 0;
 }
 
-#content-inputs__solarday__input {
+
+#content-inputs__solar-day-input {
     width: 100%;
     font-family: inherit;
     padding: 0.2rem;
+    display: grid;
+    row-gap: 1rem;
+}
+
+#content-inputs__solar-day-desc {
+    padding: 0 0.5rem;
+}
+
+#content-inputs__solar-day-desc p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 /* INVAlID SOLAR DAY INPUT */
@@ -63,10 +89,11 @@
 #content-inputs__cam-select__header h3{
     text-align: center;
     margin-bottom: 0;
+    margin: 0;
 }
 
 #content-inputs__cam-select__header p {
-    margin-top: 0.2rem;
+    margin: 0;
     font-size: 0.8rem;
     font-style: italic;
     color: gray;
@@ -179,6 +206,23 @@
     background-color: rgb(249, 211, 107);
 }
 
+@media (min-width :480px) {
+    #content-inputs {
+        grid-template-columns: 1fr 3fr;
+    }
+    #content-inputs__rover-info, 
+    #content-inputs__solar-day-input,
+    #content-inputs__solar-day-desc,
+    #content-inputs__cam-select__header,
+    #content-inputs__cam-select__div {
+        grid-column: span 2;
+    }
+
+    #content-inputs__solar-day-input {
+        /* display: grid; */
+        grid-template-columns: 1.2fr 3fr;
+    }
+}
 
 @media (min-width : 768px) {
    #photo-gallery {

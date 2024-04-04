@@ -45,7 +45,7 @@ export function displayRoverInfo(
 
   const solDaylabel = document.createElement('h3')
   solDaylabel.setAttribute('id', 'content-inputs__solarday__header')
-  solDaylabel.textContent = 'Select solar day:'
+  solDaylabel.textContent = 'Solar day:'
   solDayInput.appendChild(solDaylabel)
 
   const solDayInputField = document.createElement('input')
