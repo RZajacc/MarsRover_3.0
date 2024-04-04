@@ -1,5 +1,8 @@
+/* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
     padding: 0 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 #content-inputs__name__header {
@@ -21,6 +24,7 @@
     font-weight: bold;
 }
 
+/* Conditional styling depending on mission status */
 .active {
     color: #7CFC00
 }
@@ -39,6 +43,7 @@
     padding: 0.2rem;
 }
 
+/* INVAlID SOLAR DAY INPUT */
 #failureDiv {
     margin-top: 1rem;
     font-style: italic;
@@ -188,6 +193,6 @@
 
 @media (min-width : 1024px) {
     .photo-gallery__item {
-            width: 33%;
-        }
+        width: 33%;
+    }
 }
