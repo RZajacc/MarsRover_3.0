@@ -52,20 +52,19 @@ export async function paginationUncertainPCount(
     // Max images per page is 25. Therefor pagination is needed when where on different page than 1, or amount of images is max
     // since then probably page 2 exists
     if (imagesAmount === 25 || +page !== 1) {
-      // ? Create navigation and Previous element tab
-      const pagesDiv: HTMLDivElement = document.querySelector('#pages')!
+      // Create navigation and Previous element tab
+      const pagesDiv: HTMLDivElement = document.querySelector('#pagination')!
       const paginationNav = document.createElement('nav')
-      paginationNav.setAttribute('aria-label', 'pagination-nav')
+      paginationNav.setAttribute('class', 'pagination-container')
       pagesDiv.appendChild(paginationNav)
       const paginationUl = document.createElement('ul')
-      paginationUl.setAttribute('class', 'pagination justify-content-center')
+      paginationUl.setAttribute('class', 'pagination__items')
       paginationNav.appendChild(paginationUl)
 
       // Create a move to a FIRST PAGE element
       const firstLi = document.createElement('li')
-      firstLi.setAttribute('class', 'page-item')
+      firstLi.setAttribute('class', 'pagination__item')
       const firstHref = document.createElement('a')
-      firstHref.setAttribute('class', 'page-link')
       firstHref.setAttribute('href', '#')
       firstHref.textContent = 'First Page'
       firstLi.appendChild(firstHref)
@@ -94,9 +93,8 @@ export async function paginationUncertainPCount(
 
       // Create a move to a PREVIOUS PAGE element
       const previousLi = document.createElement('li')
-      previousLi.setAttribute('class', 'page-item')
+      previousLi.setAttribute('class', 'pagination__item')
       const previousHref = document.createElement('a')
-      previousHref.setAttribute('class', 'page-link')
       previousHref.setAttribute('href', '#')
       previousHref.textContent = 'Previous'
       previousLi.appendChild(previousHref)
@@ -127,9 +125,9 @@ export async function paginationUncertainPCount(
 
       // Create a CURRENT PAGE element
       const currentLi = document.createElement('li')
-      currentLi.setAttribute('class', 'page-item')
+      currentLi.setAttribute('class', 'pagination__item')
       const currentHref = document.createElement('a')
-      currentHref.setAttribute('class', 'page-link disabled')
+      currentHref.setAttribute('class', 'pagination__item current-page')
       currentHref.setAttribute('href', '')
       currentHref.textContent = page
       currentLi.appendChild(currentHref)
@@ -137,9 +135,8 @@ export async function paginationUncertainPCount(
 
       // Create a move to NEXT element
       const nextLi = document.createElement('li')
-      nextLi.setAttribute('class', 'page-item')
+      nextLi.setAttribute('class', 'pagination__item')
       const nextHref = document.createElement('a')
-      nextHref.setAttribute('class', 'page-link')
       nextHref.setAttribute('href', '#')
       nextHref.textContent = 'Next Page'
       nextLi.appendChild(nextHref)
