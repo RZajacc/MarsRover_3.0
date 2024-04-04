@@ -14,15 +14,24 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-rows: 69px auto 57px;
+    grid-template-areas: "header"
+                          "main"
+                          "footer";
 }
 
 main {
-    margin-top: 69px;
-    min-height: calc(100vh - 69px - 57px);
+    grid-area: main;
 }
 
 /* HEADER GENERAL STYLING */
@@ -145,6 +154,7 @@ main {
 
 /* FOOTER - contact part */
 .footer {
+    grid-area: footer;
     display: flex;
     width: 100%;
     justify-content: center;
