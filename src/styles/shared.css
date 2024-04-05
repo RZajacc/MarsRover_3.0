@@ -191,7 +191,7 @@ main {
     }
 
     .image-section {
-        height: 12rem;
+        height: 11rem;
     }
     .footer__item {
         margin: 0 3rem;
@@ -204,7 +204,7 @@ main {
     }
 
     .image-section {
-        height: 14rem;
+        height: 12rem;
         background-position: 0% 30%;
     }
 }
@@ -215,6 +215,6 @@ main {
     }
 
     .image-section {
-        height: 16rem;
+        height: 13rem;
     }
 }

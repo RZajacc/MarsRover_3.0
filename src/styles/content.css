@@ -49,15 +49,18 @@
 #content-inputs__solarday__header {
     text-align: center;
     margin: 0;
+    width: 100%;
 }
 
 
 #content-inputs__solar-day-input {
-    width: 100%;
-    font-family: inherit;
-    padding: 0.2rem;
     display: grid;
     row-gap: 1rem;
+}
+
+#content-inputs__solarday__input {
+    font-family: inherit;
+    padding: 0.2rem;
 }
 
 #content-inputs__solar-day-desc {
@@ -108,19 +111,18 @@
 
 /* IMAGE GALLERY */
 #photo-gallery-section {
-    margin-top: 2rem;
+    margin: 2rem auto;
+    padding: 0.3rem;
+    max-width: 1024px;
 }
 #photo-gallery {
-    margin-top: 1rem;
-    padding: 0 0.8rem;
-    max-width: 1024px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
 }
 .photo-gallery__item {
-    margin: 0 auto;
     width: 100%;
-    padding: 0.2rem;
-    margin-bottom: 0.4rem;
     position: relative;
 }
 
@@ -208,7 +210,7 @@
 
 @media (min-width :480px) {
     #content-inputs {
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1.2fr 3fr;
     }
     #content-inputs__rover-info, 
     #content-inputs__solar-day-input,
@@ -226,21 +228,20 @@
     #content-inputs__solar-day-input {
         grid-template-columns: 1.2fr 3fr;
     }
+
+    #photo-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width : 768px) {
-   #photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-   }
-
-   .photo-gallery__item {
-    width: 50%;
-   }
-}
+    #photo-gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 
 @media (min-width : 1024px) {
-    .photo-gallery__item {
-        width: 33%;
+    #photo-gallery {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
-}
