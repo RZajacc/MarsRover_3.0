@@ -1,11 +1,16 @@
 /* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
-    padding: 0 1rem;
+    padding: 1rem;
+    width: 95%;
     max-width: 550px;
-    margin: 2rem auto 4rem;
+    margin: 2rem auto;
     display: grid;
     row-gap: 1rem;
     align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px gray;
+    background-color: rgb(239, 224, 181);
 }
 
 #content-inputs__name__header {
