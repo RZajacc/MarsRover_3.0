@@ -53,6 +53,7 @@ main {
     height: 3.5rem;
     transform: rotateZ(0deg);
     transition: transform 400ms ease-out;
+    animation: wiggle 200ms 1s 6;
 }
 
 .main-header__brand:hover {
@@ -223,5 +224,19 @@ main {
 
     .image-section {
         height: 13rem;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-3deg);
+    }
+
+    100% {
+        transform: rotateZ(2deg);
     }
 }
