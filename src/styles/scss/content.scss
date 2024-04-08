@@ -1,6 +1,10 @@
-$light-yellow: #efe0b5;
-$light-red: #ee6a6a;
-$dark-green: #71c121;
+$colors: (
+  light-yellow: #efe0b5,
+  light-red: #ee6a6a,
+  dark-green: #71c121,
+  light-gray: #b1b1b1
+);
+$border-default: 1px solid map-get($colors, light-gray);
 
 /* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
@@ -11,10 +15,10 @@ $dark-green: #71c121;
   display: grid;
   row-gap: 1rem;
   align-items: center;
-  border: 1px solid gray;
+  border: $border-default;
   border-radius: 10px;
   box-shadow: 5px 5px 8px gray;
-  background-color: $light-yellow;
+  background-color: map-get($colors, light-yellow);
 }
 
 #content-inputs__name__header {
@@ -39,7 +43,7 @@ $dark-green: #71c121;
 
 .no-rover-selected-err {
   text-align: center;
-  color: $light-red;
+  color: map-get($colors, light-red);
 }
 
 #mission-status {
@@ -48,11 +52,11 @@ $dark-green: #71c121;
 
 /* Conditional styling depending on mission status */
 .active {
-  color: $dark-green;
+  color: map-get($colors, dark-green);
 }
 
 .complete {
-  color: $light-red;
+  color: map-get($colors, light-red);
 }
 
 #content-inputs__solarday__header {
@@ -87,7 +91,7 @@ $dark-green: #71c121;
   text-align: center;
   font-size: 0.9rem;
   color: white;
-  border: 1px solid $light-red;
+  border: 1px solid map-get($colors, light-red);
   background-color: #ec5656;
   border-radius: 10px;
   padding: 0.5rem 0.3rem;
@@ -183,7 +187,7 @@ $dark-green: #71c121;
 }
 
 .pagination__items {
-  background-color: $light-yellow;
+  background-color: map-get($colors, light-yellow);
   list-style: none;
   padding: 0;
   display: flex;
@@ -191,7 +195,7 @@ $dark-green: #71c121;
 }
 
 .pagination__item {
-  border: 1px solid rgb(177, 177, 177);
+  border: $border-default;
   padding: 0.3rem;
   cursor: pointer;
 }
