@@ -1,0 +1,213 @@
+#content-inputs {
+  padding: 1rem;
+  width: 95%;
+  max-width: 550px;
+  margin: 2rem auto;
+  display: grid;
+  row-gap: 1rem;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px gray;
+  background-color: #efe0b5;
+}
+#content-inputs__name__header {
+  text-align: center;
+  margin: 0;
+}
+#content-inputs__rover__select {
+  width: 100%;
+  font-family: inherit;
+  padding: 0.2rem;
+}
+#content-inputs__rover-info {
+  padding: 0 0.5rem;
+}
+#content-inputs__rover-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.no-rover-selected-err {
+  text-align: center;
+  color: #ee6a6a;
+}
+#mission-status {
+  font-weight: bold;
+}
+.active {
+  color: #71c121;
+}
+.complete {
+  color: #ee6a6a;
+}
+#content-inputs__solarday__header {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+#content-inputs__solar-day-input {
+  display: grid;
+  row-gap: 1rem;
+}
+#content-inputs__solarday__input {
+  font-family: inherit;
+  padding: 0.2rem;
+}
+#content-inputs__solar-day-desc {
+  padding: 0 0.5rem;
+}
+#content-inputs__solar-day-desc p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+#failureDiv {
+  margin-top: 1rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  border: 1px solid #ee6a6a;
+  background-color: #ec5656;
+  border-radius: 10px;
+  padding: 0.5rem 0.3rem;
+}
+.hide-err {
+  display: none;
+}
+#content-inputs__cam-select__header h3 {
+  text-align: center;
+  margin-bottom: 0;
+  margin: 0;
+}
+#content-inputs__cam-select__header p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+#content-inputs__cam-select__input {
+  width: 100%;
+  font-family: inherit;
+  padding: 0.2rem;
+}
+#photo-gallery-section {
+  margin: 2rem auto;
+  padding: 0.3rem;
+  max-width: 1024px;
+}
+#photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+}
+.photo-gallery__item {
+  width: 100%;
+  position: relative;
+}
+.photo-gallery__item:hover {
+  transform: translateY(-0.3rem) scale(1.02);
+  transition: transform 300ms ease-out;
+}
+.photo-gallery__item__anchor-tag img {
+  width: 100%;
+  border-radius: 8px;
+}
+.span__rover {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.span__earth-date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.span__camera {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.span__image-id {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+.pagination__items {
+  background-color: #efe0b5;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-radius: 5px;
+}
+.pagination__item {
+  border: 1px solid #b1b1b1;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.pagination__item:hover {
+  font-weight: bold;
+}
+.pagination__item:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pagination__item:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination__item a {
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+.pagination__item:has(.current-page) {
+  font-weight: bold;
+  background-color: #f9d36b;
+}
+@media (min-width: 480px) {
+  #content-inputs {
+    grid-template-columns: 1.2fr 3fr;
+  }
+  #content-inputs__rover-info,
+  #content-inputs__solar-day-input,
+  #content-inputs__solar-day-desc,
+  #content-inputs__cam-select__header,
+  #content-inputs__cam-select__div,
+  #failureDiv {
+    grid-column: span 2;
+  }
+  #content-inputs__name__header,
+  #content-inputs__solarday__header {
+    text-align: left;
+  }
+  #content-inputs__solar-day-input {
+    grid-template-columns: 1.2fr 3fr;
+  }
+  #photo-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  #photo-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  #photo-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
