@@ -1,3 +1,8 @@
+:root {
+    --light-yellow: #efe0b5;
+    --light-red: #ee6a6a;
+    --dark-green: #71c121;
+}
 /* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
     padding: 1rem;
@@ -10,7 +15,7 @@
     border: 1px solid gray;
     border-radius: 10px;
     box-shadow: 5px 5px 8px gray;
-    background-color: rgb(239, 224, 181);
+    background-color: var(--light-yellow);
 }
 
 #content-inputs__name__header {
@@ -35,7 +40,7 @@
 
 .no-rover-selected-err {
     text-align: center;
-    color: #ee6a6a;
+    color: var(--light-red);
 }
 
 #mission-status {
@@ -44,11 +49,11 @@
 
 /* Conditional styling depending on mission status */
 .active {
-    color: #7CFC00
+    color: var(--dark-green)
 }
 
 .complete {
-    color: #ee6a6a
+    color: var(--light-red)
 }
 
 #content-inputs__solarday__header {
@@ -84,7 +89,7 @@
     text-align: center;
     font-size: 0.9rem;
     color:white;
-    border: 1px solid #ee6a6a;
+    border: 1px solid var(--light-red);
     background-color: #ec5656;
     border-radius: 10px;
     padding: 0.5rem 0.3rem;
@@ -180,7 +185,7 @@
 }
 
 .pagination__items {
-    background-color: rgb(239, 224, 181);
+    background-color: var(--light-yellow);
     list-style: none;
     padding: 0;
     display: flex;
