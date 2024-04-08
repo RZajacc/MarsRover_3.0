@@ -1,10 +1,4 @@
-$colors: (
-  light-yellow: #efe0b5,
-  light-red: #ee6a6a,
-  dark-green: #71c121,
-  light-gray: #b1b1b1
-);
-$border-default: 1px solid map-get($colors, light-gray);
+@import './partials/variables';
 
 /* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
@@ -29,16 +23,16 @@ $border-default: 1px solid map-get($colors, light-gray);
 #content-inputs__rover__select {
   width: 100%;
   font-family: inherit;
-  padding: 0.2rem;
+  padding: $padding-input-input;
 }
 
 #content-inputs__rover-info {
-  padding: 0 0.5rem;
+  padding: $padding-input-desc;
 }
 
 #content-inputs__rover-info p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: $font-size-standard;
 }
 
 .no-rover-selected-err {
@@ -72,16 +66,16 @@ $border-default: 1px solid map-get($colors, light-gray);
 
 #content-inputs__solarday__input {
   font-family: inherit;
-  padding: 0.2rem;
+  padding: $padding-input-input;
 }
 
 #content-inputs__solar-day-desc {
-  padding: 0 0.5rem;
+  padding: $padding-input-desc;
 }
 
 #content-inputs__solar-day-desc p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: $font-size-standard;
 }
 
 /* INVAlID SOLAR DAY INPUT */
@@ -89,7 +83,7 @@ $border-default: 1px solid map-get($colors, light-gray);
   margin-top: 1rem;
   font-style: italic;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: $font-size-standard;
   color: white;
   border: 1px solid map-get($colors, light-red);
   background-color: #ec5656;
@@ -109,7 +103,7 @@ $border-default: 1px solid map-get($colors, light-gray);
 
 #content-inputs__cam-select__header p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: $font-size-standard;
   font-style: italic;
   color: gray;
   text-align: center;
@@ -118,7 +112,7 @@ $border-default: 1px solid map-get($colors, light-gray);
 #content-inputs__cam-select__input {
   width: 100%;
   font-family: inherit;
-  padding: 0.2rem;
+  padding: $padding-input-input;
 }
 
 /* IMAGE GALLERY */
@@ -153,7 +147,7 @@ $border-default: 1px solid map-get($colors, light-gray);
   top: 10px;
   left: 10px;
   color: white;
-  font-size: 0.8rem;
+  font-size: $font-size-smaller;
 }
 
 .span__earth-date {
@@ -161,7 +155,7 @@ $border-default: 1px solid map-get($colors, light-gray);
   top: 10px;
   right: 10px;
   color: white;
-  font-size: 0.8rem;
+  font-size: $font-size-smaller;
 }
 
 .span__camera {
@@ -169,7 +163,7 @@ $border-default: 1px solid map-get($colors, light-gray);
   bottom: 10px;
   right: 10px;
   color: white;
-  font-size: 0.8rem;
+  font-size: $font-size-smaller;
 }
 
 .span__image-id {
@@ -177,7 +171,7 @@ $border-default: 1px solid map-get($colors, light-gray);
   bottom: 10px;
   left: 10px;
   color: white;
-  font-size: 0.8rem;
+  font-size: $font-size-smaller;
 }
 
 /* PAGINATION */
