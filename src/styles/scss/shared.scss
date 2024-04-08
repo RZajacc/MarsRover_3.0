@@ -54,15 +54,15 @@ main {
   height: 3.5rem;
   transform: rotateZ(0deg);
   transition: transform 400ms ease-out;
-  animation: wiggle 200ms 1s 6;
+  animation: wiggle 200ms 1s 4;
+
+  &:hover {
+    transform: rotateZ(7deg);
+  }
 
   img {
     width: 100%;
   }
-}
-
-.main-header__brand:hover {
-  transform: rotateZ(7deg);
 }
 
 /* MOBILE NAV STYLE */
@@ -109,15 +109,13 @@ main {
     text-decoration: none;
     color: black;
   }
-}
-
-.mobile-nav__item:last-of-type {
-  border-bottom: none;
-}
-
-.mobile-nav__item:hover,
-.mobile-nav__item:active {
-  font-weight: bold;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  &:hover,
+  &:active {
+    font-weight: bold;
+  }
 }
 
 /* DESKTOP NAV STYLE*/
@@ -140,11 +138,11 @@ main {
     color: black;
     padding: 0.3rem;
     border-radius: 8px;
-  }
-  a:hover,
-  a:active {
-    font-weight: bold;
-    background-color: rgb(239, 224, 181, 0.5);
+    &:hover,
+    &:active {
+      font-weight: bold;
+      background-color: rgb(239, 224, 181, 0.5);
+    }
   }
 }
 
