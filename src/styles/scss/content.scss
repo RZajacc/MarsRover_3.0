@@ -2,13 +2,13 @@
 
 /* INPUTS FOR QUERYING IMAGES DATA */
 #content-inputs {
-  padding: 1rem;
-  width: 95%;
-  max-width: 550px;
-  margin: 2rem auto;
   display: grid;
   row-gap: 1rem;
   align-items: center;
+  max-width: 550px;
+  width: 95%;
+  margin: 2rem auto;
+  padding: 1rem;
   border: $border-default;
   border-radius: 10px;
   box-shadow: 5px 5px 8px gray;
@@ -208,15 +208,15 @@
     border-bottom-right-radius: 5px;
   }
 
+  &:has(.current-page) {
+    font-weight: bold;
+    background-color: rgb(249, 211, 107);
+  }
+
   a {
     border: none;
     text-decoration: none;
     color: black;
-  }
-
-  &:has(.current-page) {
-    font-weight: bold;
-    background-color: rgb(249, 211, 107);
   }
 }
 
