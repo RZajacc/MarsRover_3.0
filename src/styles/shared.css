@@ -51,6 +51,12 @@ main {
 .main-header__brand {
     width: 3.5rem;
     height: 3.5rem;
+    transform: rotateZ(0deg);
+    transition: transform 400ms ease-out;
+}
+
+.main-header__brand:hover {
+    transform: rotateZ(7deg);
 }
 
 .main-header__brand img {
@@ -193,6 +199,7 @@ main {
     .image-section {
         height: 11rem;
     }
+
     .footer__item {
         margin: 0 3rem;
     }
