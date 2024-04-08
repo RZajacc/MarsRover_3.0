@@ -28,11 +28,11 @@
 
 #content-inputs__rover-info {
   padding: $padding-input-desc;
-}
 
-#content-inputs__rover-info p {
-  margin: 0;
-  font-size: $font-size-standard;
+  p {
+    margin: 0;
+    font-size: $font-size-standard;
+  }
 }
 
 .no-rover-selected-err {
@@ -71,13 +71,12 @@
 
 #content-inputs__solar-day-desc {
   padding: $padding-input-desc;
-}
 
-#content-inputs__solar-day-desc p {
-  margin: 0;
-  font-size: $font-size-standard;
+  p {
+    margin: 0;
+    font-size: $font-size-standard;
+  }
 }
-
 /* INVAlID SOLAR DAY INPUT */
 #failureDiv {
   margin-top: 1rem;
@@ -95,18 +94,20 @@
   display: none;
 }
 
-#content-inputs__cam-select__header h3 {
-  text-align: center;
-  margin-bottom: 0;
-  margin: 0;
-}
+#content-inputs__cam-select__header {
+  h3 {
+    text-align: center;
+    margin-bottom: 0;
+    margin: 0;
+  }
 
-#content-inputs__cam-select__header p {
-  margin: 0;
-  font-size: $font-size-standard;
-  font-style: italic;
-  color: gray;
-  text-align: center;
+  p {
+    margin: 0;
+    font-size: $font-size-standard;
+    font-style: italic;
+    color: gray;
+    text-align: center;
+  }
 }
 
 #content-inputs__cam-select__input {
@@ -130,11 +131,11 @@
 .photo-gallery__item {
   width: 100%;
   position: relative;
-}
 
-.photo-gallery__item:hover {
-  transform: translateY(-0.3rem) scale(1.02);
-  transition: transform 300ms ease-out;
+  &:hover {
+    transform: translateY(-0.3rem) scale(1.02);
+    transition: transform 300ms ease-out;
+  }
 }
 
 .photo-gallery__item__anchor-tag img {
@@ -192,31 +193,31 @@
   border: $border-default;
   padding: 0.3rem;
   cursor: pointer;
-}
 
-.pagination__item:hover {
-  font-weight: bold;
-}
+  &:hover {
+    font-weight: bold;
+  }
 
-.pagination__item:first-of-type {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
+  &:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 
-.pagination__item:last-of-type {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
+  &:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 
-.pagination__item a {
-  border: none;
-  text-decoration: none;
-  color: black;
-}
+  a {
+    border: none;
+    text-decoration: none;
+    color: black;
+  }
 
-.pagination__item:has(.current-page) {
-  font-weight: bold;
-  background-color: rgb(249, 211, 107);
+  &:has(.current-page) {
+    font-weight: bold;
+    background-color: rgb(249, 211, 107);
+  }
 }
 
 @media (min-width: 480px) {
