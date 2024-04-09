@@ -19,6 +19,7 @@ import { displaySolDayInfo } from './Utility/displaySolDayInfo'
 import { camSelectors } from './Utility/camSelectors'
 import type { utilFuncs } from './types/utilTypes'
 
+import './styles/scss/content.scss'
 // ? ----------------------------------------------------------------------
 // ? SELECTING ROVER - Serves as a root call for everytning that comes next
 // ? ----------------------------------------------------------------------

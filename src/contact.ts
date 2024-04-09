@@ -1,3 +1,4 @@
+import './styles/scss/contact.scss'
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import emailjs from '@emailjs/browser'
 // *Initialize emailJS
