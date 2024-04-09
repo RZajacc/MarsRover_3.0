@@ -12,6 +12,7 @@
     "build/**",
     "dist/**",
     "webpack.config.js",
+    "webpack.config.prod.js",
     "src/**/*.test.ts"
   ],
   "rules": {

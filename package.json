@@ -5,6 +5,7 @@
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack",
     "build:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
+    "build:prod": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --config webpack.config.prod.js",
     "test": "vitest --run --reporter verbose --environment jsdom",
     "coverage": "vitest run --coverage",
     "ui": "vitest --ui",
