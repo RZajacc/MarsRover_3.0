@@ -1,14 +1,14 @@
 /* GENERAL SETUP */
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../styles/fonts/Roboto-Regular.ttf');
-// }
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
 
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../styles/fonts/Roboto-Bold.ttf');
-//   font-weight: 700;
-// }
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}
 
 * {
   box-sizing: border-box;
