@@ -1,10 +1,10 @@
 #contact-section {
   max-width: 550px;
-  margin: 2rem auto;
+  margin: 2rem 0.5rem;
   border: 1px solid gray;
   border-radius: 10px;
   box-shadow: 5px 5px 8px gray;
-  background-color: rgb(239, 224, 181);
+  background-color: #efe0b5;
 }
 
 /* Title over the form */
@@ -22,39 +22,27 @@
   display: grid;
   row-gap: 0.7rem;
 }
-
-#contact-form input,
-#contact-form label,
-#contact-form textarea {
-  display: block;
-  width: 480px;
-  width: 100%;
-}
-
 #contact-form label {
   font-weight: bold;
 }
-
 #contact-form input,
 #contact-form textarea {
   padding: 0.3rem;
   border: 1px solid #ccc;
   font-family: inherit;
 }
-
 #contact-form input:focus-visible,
 #contact-form textarea:focus-visible {
   background-color: #f7f7d5;
 }
-
 #contact-form button[type=submit] {
   display: block;
   cursor: pointer;
   margin: 1rem auto;
   padding: 0.5rem 0.3rem;
   border-radius: 8px;
-  background-color: #65bd36;
-  border: 2px solid #65bd36;
+  background-color: #71c121;
+  border: 2px solid #71c121;
   font-weight: bold;
   color: white;
 }
@@ -68,5 +56,8 @@
     grid-column: span 2;
   }
 }
-
-/*# sourceMappingURL=contact.css.map */
+@media (min-width: 566px) {
+  #contact-section {
+    margin: 2rem auto;
+  }
+}

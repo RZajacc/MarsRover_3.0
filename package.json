@@ -3,7 +3,7 @@
   "description": "JS Project connecting with Mars Rover API from Nasa",
   "author": "Rafal Zajac",
   "scripts": {
-    "build": "webpack",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack",
     "test": "vitest --run --reporter verbose --environment jsdom",
     "coverage": "vitest run --coverage",
     "ui": "vitest --ui",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "cross-env": "^7.0.3",
     "vite-tsconfig-paths": "^4.3.1"
   },
   "devDependencies": {
