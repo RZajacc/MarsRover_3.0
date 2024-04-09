@@ -8,7 +8,8 @@
     "coverage": "vitest run --coverage",
     "ui": "vitest --ui",
     "cypress:open": "cypress open",
-    "sass": "sass --no-source-map --style=compressed src/styles/scss:src/styles/css"
+    "sass:prod": "sass --no-source-map --style=compressed src/styles/scss:src/styles/css",
+    "sass:dev": "sass --watch --no-source-map --update --style=expanded src/styles/scss:src/styles/css"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
