@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -76,7 +77,8 @@ module.exports = {
       inject: true,
       chunks: ['shared', 'navbar'],
       filename: 'credits.html'
-    })
+    }),
+    new CleanPlugin.CleanWebpackPlugin()
   ],
   resolve: {
     extensions: ['.ts', '.js']

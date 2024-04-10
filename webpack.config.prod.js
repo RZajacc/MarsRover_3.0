@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'production',
@@ -19,7 +20,6 @@ module.exports = {
     port: 8080,
     compress: true
   },
-
   module: {
     rules: [
       {
@@ -76,7 +76,8 @@ module.exports = {
       inject: true,
       chunks: ['shared', 'navbar'],
       filename: 'credits.html'
-    })
+    }),
+    new CleanPlugin.CleanWebpackPlugin()
   ],
   resolve: {
     extensions: ['.ts', '.js']

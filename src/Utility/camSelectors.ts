@@ -15,6 +15,8 @@ export function camSelectors(
   const camInfo: HTMLParagraphElement = document.querySelector(
     '#content-inputs__cam-select__header'
   )!
+  camInfo.classList.add('show-input-fields')
+
   // Clean from previous content
   removeAllChildNodes(camInfo)
   // Create new content
@@ -31,6 +33,8 @@ export function camSelectors(
   const camerasList: HTMLDivElement = document.querySelector(
     '#content-inputs__cam-select__div'
   )!
+  camerasList.classList.add('show-input-fields')
+
   removeAllChildNodes(camerasList)
 
   // List of available cameras

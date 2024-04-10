@@ -16,6 +16,7 @@ export function displayRoverInfo(
   const roverInfo: HTMLDivElement = document.querySelector(
     '#content-inputs__rover-info'
   )!
+  roverInfo.classList.add('show-input-fields')
   const roverParagraph = document.createElement('p')
   roverParagraph.innerHTML = `<strong>${info.name}</strong> was active for 
       <strong>${info.max_sol}</strong> solar days, and made 
@@ -39,6 +40,8 @@ export function displayRoverInfo(
   const solDayInput: HTMLDivElement = document.querySelector(
     '#content-inputs__solar-day-input'
   )!
+
+  solDayInput.classList.add('show-solarday-input-field')
 
   // Clear previously generated data
   removeAllChildNodes(solDayInput)

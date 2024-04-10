@@ -24,6 +24,7 @@ export function displaySolDayInfo(
   const solDayDescDiv: HTMLDivElement = document.querySelector(
     '#content-inputs__solar-day-desc'
   )!
+  solDayDescDiv.classList.add('show-input-fields')
 
   removeAllChildNodes(solDayDescDiv)
   const solDayDescParagraph = document.createElement('p')
