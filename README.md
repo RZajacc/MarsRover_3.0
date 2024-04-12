@@ -20,6 +20,10 @@ To start using the app you will have start with installing all dependencies:
 
 `npm i`
 
+The app is using Webpack as a bundler, and also runs on Webpack server. To run it use:
+
+`npm run build:dev`
+
 To run unit tests with Vitest run:
 
 `npm run test` 
