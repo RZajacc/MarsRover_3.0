@@ -9,7 +9,8 @@ module.exports = {
     navbar: './src/navbar.ts',
     index: './src/index.ts',
     content: './src/content.ts',
-    contact: './src/contact.ts'
+    contact: './src/contact.ts',
+    credits: './src/credits.ts'
   },
   output: {
     filename: '[name].js',
@@ -74,7 +75,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/credits.html',
       inject: true,
-      chunks: ['shared', 'navbar'],
+      chunks: ['shared', 'navbar', 'credits'],
       filename: 'credits.html'
     }),
     new CleanPlugin.CleanWebpackPlugin()

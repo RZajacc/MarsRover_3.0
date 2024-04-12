@@ -1,0 +1,50 @@
+@import './partials/variables';
+.credits-section-container {
+  width: 95%;
+  max-width: 550px;
+  margin: 2rem auto;
+
+  h3 {
+    text-align: center;
+    color: #642cdc;
+  }
+}
+.credits-section-table {
+  border-spacing: 0;
+  thead {
+    background-color: map-get($colors, light-yellow);
+  }
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgb(230, 230, 230);
+      }
+      td {
+        padding: 1rem;
+        border-bottom: 2px solid #ccc;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+
+          &:hover {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .credits-section-table__header-row {
+//   th {
+//     border-bottom: 2px solid #ccc;
+//   }
+// }
+
+.credits-section-table__source {
+  width: 30%;
+  text-decoration: none;
+  border-right: 3px solid #ccc;
+}
