@@ -26,15 +26,19 @@ export async function fetchImages(
   }
 
   // Get the response and data from API
-  const response = await fetch(fetchUrl)
-  const responseData: responseRover = await response.json()
+  const response = await fetch(fetchUrl, {
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json'
+    }
+  })
 
-  // Throw an error if something goes wrong
-  if (!response.ok) {
+  if (response.ok) {
+    const responseData: responseRover = await response.json()
+    return responseData
+  } else {
     throw new Error(
       `Something went wrong.. Error : ${response.status} - ${response.statusText}`
     )
   }
-
-  return responseData
 }
