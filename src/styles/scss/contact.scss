@@ -51,6 +51,7 @@
   }
 }
 
+// MODAL STYLING
 .modal {
   position: fixed;
   display: none;
@@ -63,13 +64,25 @@
   background-color: rgba(204, 203, 203, 0.4);
 }
 
+.active {
+  display: block;
+}
+
 .modal-content {
   position: relative;
-  margin: 45% auto 0;
+  margin: 210px auto 0;
   width: 80%;
-  border: 1px solid black;
+  max-width: 400px;
+  border: 2px solid black;
   border-radius: 10px;
+}
+
+.content-success {
   background-color: #a4ef84;
+}
+
+.content-failure {
+  background-color: #fa5959;
 }
 
 .modal-body {
@@ -92,15 +105,26 @@
     margin: 0.5rem;
     margin-top: 0;
     cursor: pointer;
-    background-color: #fd3636;
-    color: white;
     padding: 0.6rem;
     border-radius: 10px;
     border: none;
+    &:hover {
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+    }
   }
-  // position: absolute;
-  // top: 0;
-  // right: 5px;
+}
+
+.button-success {
+  background-color: #fd3636;
+  color: white;
+}
+
+.button-failure {
+  font-weight: bold;
+  background-color: map-get($colors, light-yellow);
+  color: black;
 }
 
 @media (min-width: 480px) {
