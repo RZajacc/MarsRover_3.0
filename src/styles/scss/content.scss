@@ -45,6 +45,16 @@
   font-weight: bold;
 }
 
+// ! ---------TEMP-----------------
+.missing-images-warning {
+  padding: 0.5rem 0;
+  text-align: justify;
+  font-weight: bold;
+  color: map-get($colors, light-red);
+}
+
+// !-------------------------------
+
 /* Conditional styling depending on mission status */
 .active {
   color: map-get($colors, dark-green);
@@ -61,8 +71,6 @@
 }
 
 #content-inputs__solar-day-input {
-  // display: grid;
-  // row-gap: 1rem;
   display: none;
 }
 
@@ -141,7 +149,7 @@
 /* IMAGE GALLERY */
 #photo-gallery-section {
   margin: 2rem auto;
-  padding: 0.3rem;
+  padding: 1rem;
   max-width: 1280px;
 }
 #photo-gallery {

@@ -18,11 +18,26 @@ export function displayRoverInfo(
   )!
   roverInfo.classList.add('show-input-fields')
   const roverParagraph = document.createElement('p')
-  roverParagraph.innerHTML = `<strong>${info.name}</strong> was active for 
-      <strong>${info.max_sol}</strong> solar days, and made 
-      <strong>${info.total_photos}</strong> during that time. Current mission 
-      status is <span id="mission-status">${info.status}</span>.`
-  roverInfo.appendChild(roverParagraph)
+  // !-------------TEMP---------------------------------
+  if (info.name === 'Curiosity') {
+    roverParagraph.innerHTML = `<strong>${info.name}</strong> was active for 
+        <strong>${info.max_sol}</strong> solar days, and made 
+        <strong>${info.total_photos}</strong> during that time. Current mission 
+        status is <span id="mission-status">${info.status}</span>.`
+    roverInfo.appendChild(roverParagraph)
+  } else {
+    roverParagraph.innerHTML = `<strong>${info.name}</strong> was active for 
+        <strong>${info.max_sol}</strong> solar days, and made 
+        <strong>${info.total_photos}</strong> during that time. Current mission 
+        status is <span id="mission-status">${info.status}</span>.`
+    roverInfo.appendChild(roverParagraph)
+    const errorParagraph = document.createElement('p')
+    errorParagraph.setAttribute('class', 'missing-images-warning')
+    errorParagraph.innerHTML =
+      'Currently due to error images are not available! Data is queried properly from the API, imageUrls however currently lead somewhere else. Issue is reported to API creator and wiating to be fixed.'
+    roverInfo.appendChild(errorParagraph)
+  }
+  // !------------------------------------------------------
 
   // Check mission status and add value to a field
   const missionStatus: HTMLElement = document.querySelector('#mission-status')!

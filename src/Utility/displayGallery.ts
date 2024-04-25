@@ -35,8 +35,17 @@ export function displayGallery(
 
     // Create img tag with image link and append it to anchor tag
     const imageTag = document.createElement('img')
-    imageTag.setAttribute('src', element.img_src)
-    imageTag.setAttribute('alt', 'Made on: ' + element.earth_date)
+    // ! --------TEMPORARY UNTIL API IS FIXED-----------------
+    const faultyLink = 'http://mars.nasa.gov/mer/gallery/all/'
+    const replacementImage =
+      'https://res.cloudinary.com/dqdofxwft/image/upload/v1714034993/MarsRoverProject/ter4oaxbs1rqjowz8gc8.jpg'
+    if (element.img_src.includes(faultyLink)) {
+      imageTag.setAttribute('src', replacementImage)
+    } else {
+      imageTag.setAttribute('src', element.img_src)
+      imageTag.setAttribute('alt', 'Made on: ' + element.earth_date)
+    }
+    // ! ---------------------------------------------------------
     photoRef.appendChild(imageTag)
 
     // Create rover span
