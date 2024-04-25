@@ -34,7 +34,7 @@ export function displayRoverInfo(
     const errorParagraph = document.createElement('p')
     errorParagraph.setAttribute('class', 'missing-images-warning')
     errorParagraph.innerHTML =
-      'Currently due to error images are not available! Data is queried properly from the API, imageUrls however currently lead somewhere else. Issue is reported to API creator and wiating to be fixed.'
+      'Currently due to error images are not available! Data is queried properly from the API, imageUrls however currently lead somewhere else. Issue is reported to API creator and waiting to be fixed.'
     roverInfo.appendChild(errorParagraph)
   }
   // !------------------------------------------------------
