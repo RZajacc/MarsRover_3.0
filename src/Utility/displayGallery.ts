@@ -1,4 +1,5 @@
 import type { responseRover } from '../types/dataTypes'
+import noImage from '../../public/assets/no_image.jpg'
 
 /**
  * Displays a photo gallery after all necessary options before are provided
@@ -37,8 +38,7 @@ export function displayGallery(
     const imageTag = document.createElement('img')
     // ! --------TEMPORARY UNTIL API IS FIXED-----------------
     const faultyLink = 'http://mars.nasa.gov/mer/gallery/all/'
-    const replacementImage =
-      'https://res.cloudinary.com/dqdofxwft/image/upload/v1714034993/MarsRoverProject/ter4oaxbs1rqjowz8gc8.jpg'
+    const replacementImage = noImage as string
     if (element.img_src.includes(faultyLink)) {
       imageTag.setAttribute('src', replacementImage)
     } else {
