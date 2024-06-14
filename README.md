@@ -5,9 +5,9 @@
 
 *If you would like to take a look also on previous versions of the project please check:*
 
-** **v1.0** - built vith pure Javascript and styled with Bootstrap
+** **v1.0** - built vith pure Javascript and styled with Bootstrap. Check [here](https://github.com/RZajacc/Mars_Rover_1.0)
 
-** **v2.0** - built vith Javascript+Typescript and styled with Bootstrap. Also page logic was restructured completely, unit tests with Vitest are added and in some basic form also Webpack*
+** **v2.0** - built vith Javascript+Typescript and styled with Bootstrap. Also page logic was restructured completely, unit tests with Vitest are added and in some basic form also Webpack. Check [here](https://github.com/RZajacc/Mars_Rover_2.0)
 
 ### Description:
 
