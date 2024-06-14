@@ -1,12 +1,13 @@
 # MarsRover_3.0
 ### Version information:
-*Functionality of the page is the same as previous ones. What differs them is approach to structuring the code, usage of typescript and styling method*
 
-*v1.0 is build vith pure Javascript and styled with Bootstrap*
+*It is the final version of the app. It is built with Javascript+Typescript and styled with CSS+SCSS. Apart from Unit tests I'm working on End-to-end testing with Cypress, and trying to extend the use of Webpack*
 
-*v2.0 is build vith Javascript+Typescript and styled with Bootstrap. Also page logic was restructured completely, unit tests with Vitest are added and in some basic form also Webpack*
+*If you would like to take a look also on previous versions of the project please check:*
 
-*v3.0 is build vith Javascript+Typescript and styled with CSS+SCSS. Apart from Unit tests I'm working on End-to-end testing with Cypress, and trying to extend the use of Webpack*
+** **v1.0** - built vith pure Javascript and styled with Bootstrap
+
+** **v2.0** - built vith Javascript+Typescript and styled with Bootstrap. Also page logic was restructured completely, unit tests with Vitest are added and in some basic form also Webpack*
 
 ### Description:
 
